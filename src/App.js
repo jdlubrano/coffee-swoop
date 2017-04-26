@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import './Nav.css';
 
 class Home extends Component {
   render() {

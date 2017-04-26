@@ -1,0 +1,13 @@
+version: '2'
+services:
+  app:
+    build:
+      context: .
+      args:
+        - PORT
+    ports:
+      - "${PORT}:3000"
+    env_file: .env
+    volumes:
+      - .:/code
+      - /code/node_modules
