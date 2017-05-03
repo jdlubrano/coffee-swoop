@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import 'materialize-css';
+
+import 'materialize-css/dist/css/materialize.css';
+
+import App from './app/App';
 import './index.css';
 
 ReactDOM.render(
