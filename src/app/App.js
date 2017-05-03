@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import './App.css';
-import './Nav.css';
+import Nav from '../nav/Nav';
 
 class Home extends Component {
   render() {
@@ -33,19 +33,6 @@ const SignIn = () => (
         <input id="password" type="password" name="password" />
       </div>
     </form>
-  </div>
-)
-
-const Nav = () => (
-  <div className="Nav">
-    <ul className="Nav-list">
-      <li>
-        <Link to='/'>Home</Link>
-      </li>
-      <li>
-        <Link to='/sign_in'>Sign In</Link>
-      </li>
-    </ul>
   </div>
 )
 
