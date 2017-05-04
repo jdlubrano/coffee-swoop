@@ -5,7 +5,7 @@
 }
 
 .Home .header {
-  height: 250px;
+  min-height: 250px;
   padding: 20px;
   color: white;
   text-align: center;
