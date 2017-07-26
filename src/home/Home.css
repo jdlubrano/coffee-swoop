@@ -1,5 +1,6 @@
 .Home .CoffeeCup {
-  animation: coffee-cup-spin infinite 10s linear;
+  animation: coffee-cup-wobble infinite 10s ease-in-out;
+  transform-origin: bottom center;
   height: 80px;
   width: 80px;
 }
@@ -19,4 +20,10 @@
 @keyframes coffee-cup-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes coffee-cup-wobble {
+  0% { transform: rotate(-30deg); }
+  50% { transform: rotate(30deg); }
+  100% { transform: rotate(-30deg); }
 }
