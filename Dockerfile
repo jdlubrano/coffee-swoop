@@ -2,6 +2,7 @@ FROM node:7-alpine
 
 WORKDIR /tmp
 COPY package.json /tmp/
+COPY yarn.lock /tmp/
 RUN yarn install
 
 RUN mkdir -p /code
